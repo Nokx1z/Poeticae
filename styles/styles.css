@@ -1,9 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     text-align: center;
     padding: 20px;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #fdf6f0;
+    color: #6a515e;
     transition: background-color 0.5s ease;
 }
 
@@ -14,15 +14,20 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #495057;
+    color: #c06c84;
     margin-bottom: 20px;
+}
+
+header p {
+    color: #6a515e;
+    font-style: italic;
 }
 
 #generate-btn {
     padding: 10px 20px;
     font-size: 20px;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #007bff, #0056b3);
+    background: linear-gradient(to right, #c06c84, #6a515e);
     color: white;
     border: none;
     border-radius: 5px;
@@ -32,14 +37,14 @@ h1 {
 }
 
 #generate-btn:hover {
-    background: linear-gradient(to right, #0056b3, #007bff);
+    background: linear-gradient(to right, #6a515e, #c06c84);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
     color: #fff;
     transform: translateY(-7px);
 }
 
 #poem-container {
-    background-color: #fff;
+    background-color: #fff5f2;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -48,6 +53,12 @@ h1 {
 p {
     font-size: 18px;
     line-height: 1.6;
-    color: #495057;
+    color: #6a515e;
     transition: color 0.5s ease;
+}
+
+footer {
+    color: #6a515e;
+    font-size: 0.8em;
+    margin-top: 20px;
 }

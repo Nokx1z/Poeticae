@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Poemas</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Generador de Poemas</h1>
-        <button id="generate-btn" onclick="mostrarPoema()">Generar poema</button>
-        <div id="poem-container">
-            <p id="poema"></p>
-        </div>
+        <header>
+            <h1>Generador de Poemas</h1>
+            <p>¡Bienvenido al Generador de Poemas! Este sitio web genera poemas únicos con solo hacer clic en un botón. Explora la belleza de la poesía generada por inteligencia artificial.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Genera tu poema</h2>
+                <button id="generate-btn" onclick="mostrarPoema()">Generar poema</button>
+            </section>
+            <section>
+                <h2>Tu poema:</h2>
+                <div id="poem-container">
+                    <p id="poema"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Generador de Poemas. Todos los derechos reservados.</p>
+        </footer>
     </div>
     <script src="poema.js"></script>
 </body>
