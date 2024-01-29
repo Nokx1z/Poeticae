@@ -102,3 +102,19 @@ footer {
     color: #fff;
     transform: translateY(-7px);
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#poem-container, #copy-btn, #clear-btn {
+    animation: fadeIn 2s;
+}
