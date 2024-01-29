@@ -23,3 +23,13 @@ function mostrarPoema() {
     let poema = generarPoema();
     document.getElementById('poema').innerText = poema;
 }
+
+document.getElementById('copy-btn').addEventListener('click', function() {
+    let poema = document.getElementById('poema');
+    let textArea = document.createElement("textarea");
+    textArea.value = poema.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove();
+});
