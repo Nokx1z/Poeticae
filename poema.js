@@ -22,6 +22,8 @@ function generarPoema() {
 function mostrarPoema() {
     let poema = generarPoema();
     document.getElementById('poema').innerText = poema;
+    document.getElementById('copy-btn').style.display = 'block';
+    document.getElementById('clear-btn').style.display = 'block';
 }
 
 document.getElementById('copy-btn').addEventListener('click', function() {
@@ -32,4 +34,10 @@ document.getElementById('copy-btn').addEventListener('click', function() {
     textArea.select();
     document.execCommand("Copy");
     textArea.remove();
+});
+
+document.getElementById('clear-btn').addEventListener('click', function() {
+    document.getElementById('poema').innerText = '';
+    document.getElementById('copy-btn').style.display = 'none';
+    this.style.display = 'none';
 });
