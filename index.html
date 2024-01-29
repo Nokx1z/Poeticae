@@ -15,16 +15,18 @@
         <main>
             <section>
                 <h2>Genera tu poema</h2>
-                <button id="generate-btn" onclick="mostrarPoema()">Generar poema</button>
+                <button id="generate-btn" class="btn" onclick="mostrarPoema()">Generar poema</button>
             </section>
             <section>
                 <h2>Tu poema:</h2>
                 <div id="poem-container">
                     <p id="poema"></p>
-                    <button id="copy-btn">Copiar poema</button>
-                    <button id="clear-btn" style="display: none;">Limpiar poema</button>
                 </div>
             </section>
+            <div id="button-container">
+                <button id="copy-btn" class="btn">Copiar</button>
+                <button id="clear-btn" class="btn">Limpiar</button>
+            </div>
         </main>
         <footer>
             <p>© 2024 Generador de Poemas. Todos los derechos reservados.</p>

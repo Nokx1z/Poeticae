@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Georgia', serif;
     text-align: center;
     padding: 20px;
@@ -11,6 +11,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+
 
 h1 {
     font-size: 2.5em;
@@ -82,11 +84,21 @@ footer {
     color: #fff;
     transform: translateY(-7px);
 }
-
-#copy-btn, #clear-btn {
+#copy-btn:hover {
+    background: linear-gradient(to right, #6a515e, #c06c84);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #copy-btn, #clear-btn {
     padding: 10px 20px;
     font-size: 20px;
-    margin-bottom: 20px;
     background: linear-gradient(to right, #c06c84, #6a515e);
     color: white;
     border: none;
@@ -94,27 +106,105 @@ footer {
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
-}
-
-#copy-btn:hover, #clear-btn:hover {
-    background: linear-gradient(to right, #6a515e, #c06c84);
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    transform: translateY(-7px);
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 #poem-container, #copy-btn, #clear-btn {
     animation: fadeIn 2s;
-}
+} */
+
+body {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf6f0;
+    color: #6a515e;
+    transition: background-color 0.5s ease;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #c06c84;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    color: #6a515e;
+    font-style: italic;
+  }
+  
+  .btn { /* Clase común para los botones */
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(to right, #c06c84, #6a515e);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #6a515e, #c06c84);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  #poem-container {
+    background-color: #fff5f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6a515e;
+    transition: color 0.5s ease;
+  }
+  
+  footer {
+    color: #6a515e;
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #generate-btn, #copy-btn, #clear-btn {
+    margin-right: 10px; /* Agrega margen entre los botones */
+  }
+  
+  #clear-btn {
+    margin-right: 0; /* Elimina el margen del último botón */
+    width: 100px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #poem-container, #copy-btn, #clear-btn {
+    animation: fadeIn 1s; /* Duración de la animación */
+  }
