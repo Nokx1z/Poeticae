@@ -4,9 +4,13 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
-    <button onclick="mostrarPoema()">Generar poema</button>
-    <p id="poema"></p>
-
+    <div class="container">
+        <h1>Generador de Poemas</h1>
+        <button id="generate-btn" onclick="mostrarPoema()">Generar poema</button>
+        <div id="poem-container">
+            <p id="poema"></p>
+        </div>
+    </div>
     <script src="poema.js"></script>
 </body>
 </html>
